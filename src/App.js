@@ -37,11 +37,11 @@ function App() {
           }
         </div>
 
-        <div className="col-4 budget-section">
+        <div className="col-4 player-purchased-section">
           <Purse purse={purse}></Purse>
         </div>
-      </div>
 
+      </div>
 
     </div>
   );

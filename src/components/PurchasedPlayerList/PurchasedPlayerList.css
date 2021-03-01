@@ -1,17 +1,17 @@
-.bought-player-img img{
+.purchased-player-img img{
     height:84px;
     width:84px;
     border-radius:50%;
     border:2px solid blue;
 }
 
-.bought-player{
+.purchased-player{
     background:linear-gradient(to right,#1D135C,#3D1260,#5B1062);
    margin:10px 15px 10px 10px;
    padding:10px 0px;
    border-radius:10px 4px;
 }
-.bought-player-info{
+.purchased-player-info{
     color:white;
    text-align: center;
 }
