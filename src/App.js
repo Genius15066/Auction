@@ -33,7 +33,7 @@ function App() {
       <div className="row auction-deatils-container">
         <div className="col-8 player-list">
           {
-            player.map(player => <Player handleAddPlayer={handleAddPlayer} key={player.id}player={player} ></Player>)
+            player.map(player => <Player handleAddPlayer={handleAddPlayer} key={player.id} player={player} ></Player>)
           }
         </div>
 
