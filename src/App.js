@@ -1,23 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header/Header';
+import { useEffect, useState } from 'react';
+import data from './fakeData/fakedata.json'
+import './App.css'
+import Player from './components/Player/Player';
+import Purse from './components/Purse/Purse';
 
 function App() {
+  const [player, setPlayer] = useState([]);
+  const [purse, setPurse] = useState([]);
+
+  const handleAddPlayer = (player) => {
+    if(purse.indexOf(player)===-1){
+      const newPurse = [...purse,player];
+      setPurse(newPurse);
+    }  
+    else{
+      alert('The Player is already added')
+    } 
+  }
+
+  useEffect(() => {
+    setPlayer(data);
+  }, [])
+ 
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header></Header>
+
+      <div className="row auction-deatils-container">
+        <div className="col-8 player-list">
+          {
+            player.map(player => <Player handleAddPlayer={handleAddPlayer} key={player.id}player={player} ></Player>)
+          }
+        </div>
+
+        <div className="col-4 budget-section">
+          <Purse purse={purse}></Purse>
+        </div>
+      </div>
+
+
     </div>
   );
 }

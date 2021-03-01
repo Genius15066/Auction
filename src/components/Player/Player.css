@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+.player-card{
+    float: left;
+    height:300px;
+    box-shadow: 3px 3px 5px grey;
+    margin:10px;
+    width:30%;
+    padding:10px 5px;
+    text-align:center;
+    background-color: rgb(220, 228, 228);
+    margin-left:19px;
+    border-radius: 10px 3px;;
+}
+.player-card img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    border:3px solid teal;
+    
+}

@@ -1,0 +1,25 @@
+.player-purchase h2{
+        text-align: center;
+        color:rgb(251, 246, 253);
+        background:#038DCC;
+        margin:0px 24px 20px 8px;
+        padding:12px 8px;
+        border-radius:10px;
+       
+}
+.purse-calculation{
+    background-color: #223675;
+    text-align: center;
+    margin: 10px 15px 20px 5px;
+    border-radius: 10px 0px 10px 0px;
+    padding:10px 0px;
+}
+
+.purse-calculation h1{
+    color:white;
+}
+.purse-calculation h5{
+    color:white;
+    opacity: .7;
+    padding:10px 0px;
+}
